@@ -1,0 +1,87 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+  border: 2px solid;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: gray;
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.inner-container {
+  width: 100%;
+  padding: 10px;
+  margin: 10px;
+  background-color: white;
+  user-select: none;
+}
+
+.question-list {
+  width: 85%;
+  text-align: center;
+  list-style-position: inside;
+  align-items: center;
+  justify-content: center;
+}
+
+.question {
+  width: 100%;
+  display:block;
+  align-self: center;
+  margin-bottom: 5px;
+  background-color: white;
+}
+
+.admin-panel-question-button {
+  margin: 2px;
+}
+
+.text-input {
+  margin: 5px;
+  padding: 2px;
+}
+
+.back-button {
+  width: 15%;
+  margin-bottom: 5px;
+}
+
+.bottom-button {
+  width: 20%;
+  margin-left: 300px;
+}
+
+.options-element {
+  display: flex;
+  flex-direction: column;
+}
+
+.option-button {
+  padding: 3px;
+  margin: 2px;
+}
+#search_bar {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid;
+  border-radius: 5px;
+  align-self: center;
+  margin-bottom: 5px;
+}
+
+#soru_form {
+  display: flex;
+  flex-direction: column;
+}
