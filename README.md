@@ -1,3 +1,12 @@
-Admin Paneli: /panels/admin/admin.php
 
-Firma Paneli: /panels/company/index.php
+# YavuzlarYemek:
+
+Admin Hesabı: admin:admin
+
+Admin paneli: /panels/admin/admin.php
+
+Firma Hesabı: company:admin
+
+Firma paneli: /panels/company/index.php
+
+
