@@ -41,7 +41,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
     $stmt->bindParam(":score", $_POST["score"]);
     $stmt->bindParam(":id", $comment["id"]);
   } else {
-    $stmt = $db->prepare("INSERT INTO comments (title, description, score, user_id, restaurant_id, surname) VALUES (:title, :description, :score, :user_id, :restaurant_id, :surname)");
+    $stmt = $db->prepare("INSERT INTO comments (title, description, score, user_id, restaurant_id, surname, created_at) VALUES (:title, :description, :score, :user_id, :restaurant_id, :surname, NOW())");
     $stmt->bindParam(":title", $_POST["title"]);
     $stmt->bindParam(":description", $_POST["description"]);
     $stmt->bindParam(":score", $_POST["score"]);

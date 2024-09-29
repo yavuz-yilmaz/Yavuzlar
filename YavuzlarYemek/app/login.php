@@ -18,6 +18,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
   if ($user && password_verify($password, $user["password"])) {
     $_SESSION["user"] = $user;
+    if ($user["role"] == "admin") {
+      header("Location: /panels/admin/admin.php");
+      exit();
+    } else if ($user["role"] == "company") {
+      header("Location: /panels/company/index.php");
+      exit();
+    }
     header("Location: /index.php");
     exit();
   } else {
